@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DPController : MonoBehaviour
+public class TransitionController : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Exp;
@@ -25,6 +25,11 @@ public class DPController : MonoBehaviour
         if (other.tag == "Scene Trigger")
         {
             SceneManager.LoadScene(1);
+       }
+
+       if (other.tag == "Scene Trigger 2")
+        {
+            SceneManager.LoadScene(6);
        }
     }
 }

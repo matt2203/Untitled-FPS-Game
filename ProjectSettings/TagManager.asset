@@ -19,6 +19,8 @@ TagManager:
   - ST3
   - Door Trigger Scene 1.5
   - Engine Light
+  - Scene Trigger 2
+  - PlayerLvl2
   layers:
   - Default
   - TransparentFX

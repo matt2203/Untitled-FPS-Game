@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hub World
       objectReference: {fileID: 0}
+    - target: {fileID: 7437283422953801279, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: Level2
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

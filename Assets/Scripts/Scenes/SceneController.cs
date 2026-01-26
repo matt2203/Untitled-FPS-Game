@@ -13,6 +13,7 @@ public class SceneController : MonoBehaviour
     public GameObject MainMenu;
     public GameObject QuitConfirm;
     public KeyCode QuitConfirmed;
+    public KeyCode Level2;
 
 
 
@@ -33,6 +34,13 @@ public class SceneController : MonoBehaviour
         {
             SceneManager.LoadScene(5);
         }
+
+        if (Input.GetKey(Level2))
+
+        {
+            SceneManager.LoadScene(7);
+        }
+
         if (Input.GetKey(Quit))
         {
             MainMenu.SetActive(false);
