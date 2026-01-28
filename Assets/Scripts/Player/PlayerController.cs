@@ -11,8 +11,7 @@ public class PlayerController : MonoBehaviour
     public Animator playerAnimator;
     public GameObject ShootFX;
     public float ShootFXLifetime;
-    public GameObject PlayerLvl2;
-    public GameObject PlayerLvl2Spawn;
+    
 
 
 
@@ -24,17 +23,6 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetBool("isMoving", false);
         StartCoroutine(DeactivateObjectsAfterDelay(ShootFXLifetime));
 
-    }
-
-    void OTriggerEnter(Collider other)
-    {
-        if (other.tag == "playerLvl2")
-
-        {   
-            Debug.Log("Detected");
-            Destroy(gameObject);  
-            Instantiate(PlayerLvl2, PlayerLvl2Spawn.transform.position, PlayerLvl2Spawn.transform.rotation); 
-        }
     }
 
     void FixedUpdate()

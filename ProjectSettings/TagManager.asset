@@ -21,6 +21,7 @@ TagManager:
   - Engine Light
   - Scene Trigger 2
   - PlayerLvl2
+  - PlayerLvl2 Transition
   layers:
   - Default
   - TransparentFX

@@ -104,7 +104,6 @@ GameObject:
   - component: {fileID: 7165756474353551979}
   - component: {fileID: 645740489743367466}
   - component: {fileID: 2568832848145615124}
-  - component: {fileID: 1182537228117499901}
   m_Layer: 0
   m_Name: PlayerLvl2
   m_TagString: Untagged
@@ -177,7 +176,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
@@ -203,25 +202,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.069871, z: 1}
   m_Center: {x: 0, y: 1.11996, z: -0}
---- !u!114 &1182537228117499901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752504097636518144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5557ace5400b74585bf053efc4f3a18c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 4700
-  rb: {fileID: 0}
-  playerAnimator: {fileID: 0}
-  ShootFX: {fileID: 0}
-  ShootFXLifetime: 0
-  PlayerLvl2: {fileID: 0}
-  PlayerLvl2Spawn: {fileID: 0}
 --- !u!1 &1282005553953131071
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,13 +228,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282005553953131071}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.331, y: -4.225, z: -0.716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.006, y: 1.981, z: 0.007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6182880723057404217}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &140932206741173931
 Camera:
   m_ObjectHideFlags: 0
