@@ -778,6 +778,7 @@ MonoBehaviour:
   MainMenu: {fileID: 0}
   QuitConfirm: {fileID: 0}
   QuitConfirmed: 0
+  Level2: 0
 --- !u!1 &1999347436
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,45 +823,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1252608370435802313, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1252608370435802313, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2495280337968664182, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
       propertyPath: m_Name
       value: Main UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 2495280337968664182, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838066782377245107, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838066782377245107, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838066782377245107, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838066782377245107, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838066782377245107, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 105
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838066782377245107, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 8126859916457038615, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
       propertyPath: m_Pivot.x
