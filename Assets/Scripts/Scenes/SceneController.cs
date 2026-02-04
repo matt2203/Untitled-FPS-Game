@@ -14,6 +14,7 @@ public class SceneController : MonoBehaviour
     public GameObject QuitConfirm;
     public KeyCode QuitConfirmed;
     public KeyCode Level2;
+    
 
 
 

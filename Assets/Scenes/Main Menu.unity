@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 429786454965892422, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1001210168463439656, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -170,6 +174,36 @@ PrefabInstance:
     - target: {fileID: 1410016976811317160, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: m_Name
       value: Hub World
+      objectReference: {fileID: 0}
+    - target: {fileID: 2539629463089345071, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: Quit
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556392201887429598, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556392201887429598, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.399
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876998119032800483, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256932516867461533, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287388741063531900, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365153135157161754, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_text
+      value: "Main Menu: R (Aim trainer)\n\nReturn to menu: M (all levels)\n\ncall
+        dropship: M (level 1 only)\n\nquit game: Esc (Main Menu only)\n\t\nPrevious
+        page: Q"
       objectReference: {fileID: 0}
     - target: {fileID: 7437283422953801279, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: Level2

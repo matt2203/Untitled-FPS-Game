@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 52109981}
   - component: {fileID: 52109980}
   - component: {fileID: 52109982}
+  - component: {fileID: 52109983}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -432,6 +433,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660afd5c8612e4798ad27ad6f0ae601d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPSLimiter
+--- !u!114 &52109983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52109979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df883b88513864f5298b7c1b675da585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToMenu
 --- !u!4 &115549510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 468908, guid: 73d3182f2ceb62f48b8ab3173dc89e20, type: 3}
