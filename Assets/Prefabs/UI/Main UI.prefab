@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 4837749247068812788}
   - component: {fileID: 6593659506632524780}
   m_Layer: 5
-  m_Name: Open Door Prompt
+  m_Name: Prompt UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

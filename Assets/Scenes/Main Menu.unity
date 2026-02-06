@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 313122666068573960, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 429786454965892422, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -195,15 +199,47 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5134002582307740586, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_text
+      value: 'Start Level 1 (clear area): 1
+
+
+        Open Aim trainer: T
+
+
+        Start
+        Level 2 (Destroy Ship): 2
+
+
+        Return To Menu: R
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134002582307740586, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_fontSize
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134002582307740586, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5287388741063531900, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6365153135157161754, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: m_text
       value: "Main Menu: R (Aim trainer)\n\nReturn to menu: M (all levels)\n\ncall
         dropship: M (level 1 only)\n\nquit game: Esc (Main Menu only)\n\t\nPrevious
         page: Q"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418818072057372929, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418818072057372929, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.26
       objectReference: {fileID: 0}
     - target: {fileID: 7437283422953801279, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       propertyPath: Level2
@@ -214,6 +250,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4078928417922038178, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4447732844433772748, guid: 099f0476c1977407aa7e371c3395542a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 099f0476c1977407aa7e371c3395542a, type: 3}

@@ -21,7 +21,7 @@ Material:
   m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _ColorMask
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -95,7 +95,7 @@ Material:
     - _DstBlend: 0
     - _EmissionFactor: 2
     - _EmissiveFactor: 1
-    - _Glossiness: 1
+    - _Glossiness: 0
     - _Metallic: 1
     - _MetalnessFactor: 0
     - _Mode: 0
@@ -108,14 +108,15 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _Color1: {r: 1, g: 1, b: 1, a: 1}
     - _Color2: {r: 1, g: 1, b: 1, a: 1}
     - _DamageColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.24264705, g: 0.7179514, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 0.108383924, b: 0, a: 1}
     - _EmissiveColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MaskedColorA: {r: 1, g: 1, b: 1, a: 1}
-    - _MaskedColorB: {r: 1, g: 1, b: 1, a: 1}
+    - _MaskedColorA: {r: 1, g: 0, b: 0, a: 1}
+    - _MaskedColorB: {r: 0.990566, g: 0, b: 0, a: 1}
     - _MaskedColorC: {r: 1, g: 0.062068876, b: 0, a: 1}
     - _OutlineColor: {r: 0.44117644, g: 0.8843815, b: 1, a: 0.39215687}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

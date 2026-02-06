@@ -119,3 +119,4 @@ Material:
     - _MaskedColorC: {r: 1, g: 0.062068876, b: 0, a: 1}
     - _OutlineColor: {r: 0.44117644, g: 0.8843815, b: 1, a: 0.39215687}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
