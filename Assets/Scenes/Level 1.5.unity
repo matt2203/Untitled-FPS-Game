@@ -2361,6 +2361,14 @@ PrefabInstance:
       propertyPath: SpawnDropship
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5029915740351758457, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
+      propertyPath: Damage
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282578050518527122, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6308375164548298489, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7558212

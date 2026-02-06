@@ -329,6 +329,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 73.890915
       objectReference: {fileID: 0}
+    - target: {fileID: 5029915740351758457, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
+      propertyPath: Damage
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6270089087551598062, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       propertyPath: m_LocalPosition.y
       value: 345.1
@@ -924,7 +928,6 @@ MonoBehaviour:
   QuitConfirm: {fileID: 0}
   QuitConfirmed: 0
   Level2: 0
-  ReturnMenu: 0
 --- !u!4 &1831747275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6308375164548298489, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
