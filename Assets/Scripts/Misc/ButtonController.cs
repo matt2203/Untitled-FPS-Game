@@ -1,16 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public KeyCode PressButton = KeyCode.E;
+    public GameObject promptUI;
+    public GameObject DetectionCollider;
+    
 
-    // Update is called once per frame
+    public bool playerInside = false;
+
     void Update()
     {
-        
+        if (playerInside && Input.GetKeyDown(PressButton))
+        {
+            
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerMain"))
+        {
+            playerInside = true;
+            if (promptUI != null) promptUI.SetActive(true); 
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("PlayerMain"))
+        {
+            playerInside = false;
+            if (promptUI != null) promptUI.SetActive(false); 
+        }
     }
 }

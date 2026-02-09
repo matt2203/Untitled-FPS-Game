@@ -22,6 +22,8 @@ TagManager:
   - Scene Trigger 2
   - PlayerLvl2
   - PlayerLvl2 Transition
+  - Trigger1
+  - Trigger2
   layers:
   - Default
   - TransparentFX
