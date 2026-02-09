@@ -13,7 +13,7 @@ public class DSController2 : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
         {
             Instantiate(Exp, ExpSpawn.transform.position, ExpSpawn.transform.rotation);
-            Hole.SetActive(false);
+            Destroy(Hole);
             Dropship.SetActive(true);
         }
 
