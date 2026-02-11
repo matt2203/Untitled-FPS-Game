@@ -16,7 +16,7 @@ public class ButtonController : MonoBehaviour
     {
         if (playerInside && Input.GetKeyDown(PressButton))
         {
-            
+            SceneManager.LoadScene(9);
         }
     }
 

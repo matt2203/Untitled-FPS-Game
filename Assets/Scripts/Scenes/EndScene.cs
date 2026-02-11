@@ -20,11 +20,10 @@ public class EndScene : MonoBehaviour
         rb.AddRelativeForce(Vector3.back * speed);
     }
 
-    void OTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Trigger1")
         {
-            Debug.Log("Detected");
             Instantiate(Exp, Ship.transform.position, Ship.transform.rotation);
             Destroy(Ship);
         }
