@@ -28,9 +28,9 @@ public class EndScene : MonoBehaviour
             Destroy(Ship);
         }
 
-        if (tag == "Trigger2")
+        if (other.tag == "Trigger2")
         {
-            
+            SceneManager.LoadScene(10);
         }
     }
 }
