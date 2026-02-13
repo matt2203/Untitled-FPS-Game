@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EntityController : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float StartingHealth;
     private float health;
@@ -25,11 +25,5 @@ public class EntityController : MonoBehaviour
     void Start()
     {
         Health = StartingHealth;
-        
-    }
-
-      void Update()
-    {
-        
     }
 }

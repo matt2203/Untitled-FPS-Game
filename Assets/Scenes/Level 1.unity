@@ -395,7 +395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7168513845088087775, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -416,6 +416,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7168513845088087775, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1831747267}
+    - targetCorrespondingSourceObject: {fileID: 7168513845088087775, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1831747276}
   m_SourcePrefab: {fileID: 100100000, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
 --- !u!1 &378392698
 GameObject:
@@ -933,6 +936,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6308375164548298489, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
   m_PrefabInstance: {fileID: 297966670}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831747276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831747249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03104086669324e10acf5449a4b8486a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  StartingHealth: 100
 --- !u!1 &1999347436
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +996,10 @@ PrefabInstance:
     - target: {fileID: 2495280337968664182, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
       propertyPath: m_Name
       value: Main UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495280337968664182, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8126859916457038615, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
       propertyPath: m_Pivot.x
@@ -1129,7 +1149,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1285637392}
   - {fileID: 8755396677838144700}
-  - {fileID: 723592846455383785}
   - {fileID: 1170953357}
   - {fileID: 1693788918}
   - {fileID: 1657947790}
@@ -1137,3 +1156,4 @@ SceneRoots:
   - {fileID: 125109987}
   - {fileID: 297966670}
   - {fileID: 1999347437}
+  - {fileID: 723592846455383785}
