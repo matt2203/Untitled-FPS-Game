@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Animator playerAnimator;
     public GameObject ShootFX;
     public float ShootFXLifetime;
+    private GameManager gameManager;
     
 
 
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         playerAnimator.SetBool("isMoving", false);
         StartCoroutine(DeactivateObjectsAfterDelay(ShootFXLifetime));
-
+        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
     }
 
     void FixedUpdate()
@@ -78,14 +79,13 @@ public class PlayerController : MonoBehaviour
                 obj.SetActive(false);
             }
         }
-        
-    }
-        
-        
+    }          
 
-
-
-        
-    }
+    public void TakeDmg(int DmgToTake)
+    {
+        Health -= DmgToTake;
+        gameManager.UpdateHealth(Health);
+    }        
+}
     
 
