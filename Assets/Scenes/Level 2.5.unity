@@ -1195,14 +1195,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main UI
       objectReference: {fileID: 0}
-    - target: {fileID: 2495280337968664182, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4782342316168608370, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
-      propertyPath: m_Name
-      value: Health Text
-      objectReference: {fileID: 0}
     - target: {fileID: 8126859916457038615, guid: 2d2b14b5fc9394b39b3bad88601eaba4, type: 3}
       propertyPath: m_Pivot.x
       value: 0

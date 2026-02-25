@@ -23,7 +23,7 @@ public class DSController : MonoBehaviour
     {
         if (other.tag == "Dropship")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(11);
         }
     }
 

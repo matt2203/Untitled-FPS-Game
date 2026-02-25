@@ -10,11 +10,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Health = 100;
-        HealthText.text = Health;
+        HealthText.text = ""+Health;
     }
 
     public void UpdateHealth(int Health)
     {
-        HealthText.text = Health;
+        HealthText.text = ""+Health;
     }
 }

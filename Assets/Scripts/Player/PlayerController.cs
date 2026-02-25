@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public GameObject ShootFX;
     public float ShootFXLifetime;
     private GameManager gameManager;
+    public int Health = 100;
     
 
 
