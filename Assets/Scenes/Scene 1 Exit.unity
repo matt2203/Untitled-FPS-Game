@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 190044418}
   - component: {fileID: 190044417}
   - component: {fileID: 190044416}
+  - component: {fileID: 190044419}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -211,6 +212,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!114 &190044419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190044415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfee1af6f71f43d88a9a7feab584fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorLock
 --- !u!1 &239775126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 111078, guid: b271505711828fd4e9719f1b97a0922a, type: 3}
@@ -255,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5ab822abcda432cbf8bf5d43200614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExitController
-  speed: 0.5
+  speed: 3.25
   rb: {fileID: 239775127}
 --- !u!4 &239775131 stripped
 Transform:
