@@ -3164,6 +3164,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_TagString
+      value: Dropship
+      objectReference: {fileID: 0}
     - target: {fileID: 8596416882575614943, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 116.6

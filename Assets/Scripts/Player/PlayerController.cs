@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private GameManager gameManager;
     public int Health = 100;
     
+    
 
 
 
@@ -24,7 +26,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         playerAnimator.SetBool("isMoving", false);
         StartCoroutine(DeactivateObjectsAfterDelay(ShootFXLifetime));
-        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+        gameManager = FindFirstObjectByType<GameManager>().GetComponent<GameManager>();
     }
 
     void FixedUpdate()
@@ -67,8 +69,15 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-        
-        IEnumerator DeactivateObjectsAfterDelay(float seconds)
+    void OCollisionEnter(Collision collision)
+    {
+        if (tag == "Dropship")
+        {
+            SceneManager.LoadScene(11);
+        }
+    }
+
+    IEnumerator DeactivateObjectsAfterDelay(float seconds)
     {
         while (true)
         {

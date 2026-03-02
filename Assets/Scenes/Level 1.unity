@@ -1205,9 +1205,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3283047153042716647, guid: 93bbf26e075124d7ea0186e78e6a0fe0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 457.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3298517398845528775, guid: 93bbf26e075124d7ea0186e78e6a0fe0, type: 3}
       propertyPath: m_Name
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998200994543566628, guid: 93bbf26e075124d7ea0186e78e6a0fe0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 452.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
