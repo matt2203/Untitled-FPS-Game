@@ -69,11 +69,11 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    void OCollisionEnter(Collision collision)
+    void OTriggerEnter(Collider other)
     {
-        if (tag == "Dropship")
+        if (other.tag == "DropshipEnd")
         {
-            SceneManager.LoadScene(11);
+            SceneManager.LoadScene(4);
         }
     }
 

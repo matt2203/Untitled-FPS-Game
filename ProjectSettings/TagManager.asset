@@ -24,6 +24,7 @@ TagManager:
   - PlayerLvl2 Transition
   - Trigger1
   - Trigger2
+  - DropshipEnd
   layers:
   - Default
   - TransparentFX

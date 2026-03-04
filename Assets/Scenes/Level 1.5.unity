@@ -3156,13 +3156,45 @@ PrefabInstance:
       propertyPath: m_AngularDamping
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6986155661113163976, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_TagString
+      value: DropshipEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133421771531987383, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997298302487441219, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Size.x
+      value: 52.97706
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997298302487441219, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4741097
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997298302487441219, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Size.z
+      value: 30.921886
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997298302487441219, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Center.x
+      value: 3.4245236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997298302487441219, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Center.y
+      value: -7.2051473
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997298302487441219, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Center.z
+      value: 0.09939578
+      objectReference: {fileID: 0}
     - target: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
       propertyPath: m_Name
       value: Dropship
       objectReference: {fileID: 0}
     - target: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
       propertyPath: m_TagString
