@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    void OTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "DropshipEnd")
         {

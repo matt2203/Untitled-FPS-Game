@@ -1,41 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EnemyDPController : MonoBehaviour
 {
-    public GameObject SpawnPoint1;
-    public GameObject SpawnPoint2;
-    public GameObject SpawnPoint3;
-    public GameObject SpawnPoint4;
-    public GameObject SpawnPoint5;
-    public GameObject SpawnPoint6;
-    public GameObject Enemy;
-    public GameObject Exp;
-    public GameObject ExpSpawn;
-    public GameObject EnemySpawn;
-    public GameObject EnemyDP;
+    [Header("Prefab to Spawn")]
+    public GameObject prefabToSpawn;
 
+    [Header("Cube Space Dimensions")]
+    public Vector3 cubeCenter = Vector3.zero;
+    public Vector3 cubeSize = new Vector3(10, 10, 10);
 
+    [Header("Spawn Settings")]
+    public int numberOfSpawns = 10;
+    public float startDelay;
+    public float spawnInterval;
 
-    void OnTriggerEnter(Collider other)
+    void Start()
     {
-        if (other.tag == "ST1")
-        {
-             Debug.Log("Detected");
-            Instantiate(EnemyDP, SpawnPoint1.transform.position, SpawnPoint1.transform.rotation);
-            Instantiate(EnemyDP, SpawnPoint2.transform.position, SpawnPoint2.transform.rotation);
-            Instantiate(EnemyDP, SpawnPoint3.transform.position, SpawnPoint3.transform.rotation);
-            Instantiate(EnemyDP, SpawnPoint4.transform.position, SpawnPoint4.transform.rotation);
-            Instantiate(EnemyDP, SpawnPoint5.transform.position, SpawnPoint5.transform.rotation);
-            Instantiate(EnemyDP, SpawnPoint6.transform.position, SpawnPoint6.transform.rotation);
-        }
-           
-        
-         if (other.tag == "Ground")
-            {
-                Instantiate(Exp, ExpSpawn.transform.position, ExpSpawn.transform.rotation);
-                Instantiate(Enemy, EnemySpawn.transform.position, EnemySpawn.transform.rotation);
-                Destroy(gameObject);
-            }
+        InvokeRepeating("SpawnObjects", startDelay, spawnInterval);
+
     }
-}
+
+    void SpawnObjects()
+    {
+        for (int i = 0; i < numberOfSpawns; i++)
+        {
+            Vector3 randomPosition = GetRandomPositionInCube();
+            Instantiate(prefabToSpawn, randomPosition, Quaternion.identity);
+        }
+    }
+
+    Vector3 GetRandomPositionInCube()
+    {
+        return new Vector3(
+            Random.Range(cubeCenter.x - cubeSize.x / 2, cubeCenter.x + cubeSize.x / 2),
+            Random.Range(cubeCenter.y - cubeSize.y / 2, cubeCenter.y + cubeSize.y / 2),
+            Random.Range(cubeCenter.z - cubeSize.z / 2, cubeCenter.z + cubeSize.z / 2)
+        );
+    }
+    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(cubeCenter, cubeSize);
+    }
+}    
