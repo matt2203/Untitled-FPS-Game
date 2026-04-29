@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     private int Health;
     public TextMeshProUGUI HealthText;
-    
+    internal bool isGameActive;
+
     void Start()
     {
         Health = 100;
