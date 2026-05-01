@@ -39,20 +39,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddRelativeForce(Vector3.forward * speed);
-            playerAnimator.SetBool("isMoving", true);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             rb.AddRelativeForce(Vector3.left * speed);
-            playerAnimator.SetBool("isMovingLeft", true);
 
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             rb.AddRelativeForce(Vector3.right * speed);
-            playerAnimator.SetBool("isMovingRight", true);
         }
 
 
@@ -60,7 +57,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             rb.AddRelativeForce(Vector3.back * speed);
-            playerAnimator.SetBool("isMovingBack", true);
         }
 
         if (Input.GetMouseButton(0))

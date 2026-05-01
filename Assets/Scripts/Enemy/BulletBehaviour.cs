@@ -24,6 +24,7 @@ public class BulletBehaviour : MonoBehaviour
             SceneManager.LoadScene(4);
         }
     }
+    
 }
  
 

@@ -6,9 +6,9 @@ public class EnemyGunController : MonoBehaviour
 
  public float rotationSpeed = 20f;
 
- public GameObject firePointLink;
+ public GameObject Firepoint;
 
- public GameObject normalShell;
+ public GameObject Bullet;
 
  public float fireRate = 5f;
 
@@ -31,7 +31,7 @@ public class EnemyGunController : MonoBehaviour
 
  {
 
- Instantiate(normalShell, firePointLink.transform.position, firePointLink.transform.rotation);
+ Instantiate(Bullet, Firepoint.transform.position, Firepoint.transform.rotation);
 }
 
 }
