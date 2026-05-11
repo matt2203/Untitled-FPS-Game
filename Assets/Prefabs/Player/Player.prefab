@@ -443,7 +443,8 @@ GameObject:
   - component: {fileID: 8943115938164752829}
   - component: {fileID: 1262417118005953812}
   - component: {fileID: 485689836010225023}
-  - component: {fileID: 1265537567898602152}
+  - component: {fileID: 3078279581685230072}
+  - component: {fileID: 1911852916016659006}
   m_Layer: 0
   m_Name: Player
   m_TagString: PlayerMain
@@ -482,7 +483,7 @@ Animator:
   m_GameObject: {fileID: 7168513845088087775}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cfeff1d67ecb92245941b957cebd290e, type: 3}
-  m_Controller: {fileID: 9100000, guid: 5d748914d02d2ce4d89d3ba044ed20f0, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -506,12 +507,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5557ace5400b74585bf053efc4f3a18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 29
+  speed: 10
   rb: {fileID: 1387975395317465364}
   playerAnimator: {fileID: 5108056084048575716}
   ShootFX: {fileID: 1405291723945903656}
   ShootFXLifetime: 0.4
   Health: 100
+  PlayerHP: 100
 --- !u!54 &1387975395317465364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -594,8 +596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dropship: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
   DropshipSpawn: {fileID: 4991866298171053053}
-  SpawnDropship: 120
---- !u!114 &1265537567898602152
+  SpawnDropship: 109
+--- !u!114 &3078279581685230072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -604,20 +606,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 7168513845088087775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09806a5ea83b645d49b8c581a1daeb8b, type: 3}
+  m_Script: {fileID: 11500000, guid: fd41e3d60d29a422fac31826533a9565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPoint1: {fileID: 0}
-  SpawnPoint2: {fileID: 0}
-  SpawnPoint3: {fileID: 0}
-  SpawnPoint4: {fileID: 0}
-  SpawnPoint5: {fileID: 0}
-  SpawnPoint6: {fileID: 0}
-  Enemy: {fileID: 0}
-  Exp: {fileID: 0}
-  ExpSpawn: {fileID: 0}
-  EnemySpawn: {fileID: 0}
-  EnemyDP: {fileID: 0}
+  ST1: {fileID: 0}
+--- !u!114 &1911852916016659006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168513845088087775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1df8448ed08842af958b46b17fbabdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level1: 0
+  AimTrainer: 0
+  ATReturn: 0
+  Quit: 0
+  QuitStop: 0
+  MainMenu: {fileID: 0}
+  QuitConfirm: {fileID: 0}
+  QuitConfirmed: 0
+  Level2: 0
 --- !u!1 &8900766162703226084
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03494d3528bb14a09939bc9a2fc10d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 1.5
+  Damage: 2.5
   BulletRange: 100
 --- !u!65 &1531869853029321384
 BoxCollider:

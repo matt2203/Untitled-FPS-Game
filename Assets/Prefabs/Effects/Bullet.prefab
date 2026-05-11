@@ -280,9 +280,8 @@ GameObject:
   - component: {fileID: 5458650865315912714}
   - component: {fileID: 3667120421975990053}
   - component: {fileID: 8630936442649908425}
-  - component: {fileID: 6105990800819681101}
   - component: {fileID: 204430726963178854}
-  - component: {fileID: 3031215390385573693}
+  - component: {fileID: 3655373441901539996}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -393,7 +392,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5622290570181080972}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -412,21 +411,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &6105990800819681101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5622290570181080972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a41d7f2ec64bb45cba2cc0ab208c313a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BulletBehaviour
-  speed: 1000
-  lifeTime: 20
-  damage: 25
 --- !u!82 &204430726963178854
 AudioSource:
   m_ObjectHideFlags: 0
@@ -524,7 +508,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3031215390385573693
+--- !u!114 &3655373441901539996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -533,6 +517,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5622290570181080972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c2532d3146d94f1598e88c24bf995cd, type: 3}
+  m_Script: {fileID: 11500000, guid: a41d7f2ec64bb45cba2cc0ab208c313a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BulletDespawner
+  m_EditorClassIdentifier: Assembly-CSharp::BulletBehaviour
+  speed: 0.05
+  lifeTime: 100
+  PlayerHP: 100
+  EnemyDmg: 50

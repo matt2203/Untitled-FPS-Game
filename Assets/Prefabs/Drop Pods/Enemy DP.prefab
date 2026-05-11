@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 387243116267036909}
   - component: {fileID: 5473402899198300695}
   - component: {fileID: 321670020751138246}
-  - component: {fileID: 8726537873058199456}
   m_Layer: 0
   m_Name: Enemy DP
   m_TagString: ST1
@@ -202,7 +201,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -216,7 +215,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540664590461286720}
   serializedVersion: 5
-  m_Mass: 3000
+  m_Mass: 100
   m_LinearDamping: 2
   m_AngularDamping: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -235,26 +234,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!114 &8726537873058199456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540664590461286720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09806a5ea83b645d49b8c581a1daeb8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpawnPoint1: {fileID: 0}
-  SpawnPoint2: {fileID: 0}
-  SpawnPoint3: {fileID: 0}
-  Enemy: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
-  Exp: {fileID: 7354695869903840038, guid: 8d03efb8852445040b36a90d33f0f5c6, type: 3}
-  ExpSpawn: {fileID: 1540664590461286720}
-  EnemySpawn: {fileID: 2016943612529122344}
-  EnemyDP: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
 --- !u!1 &1810752744776446302
 GameObject:
   m_ObjectHideFlags: 0

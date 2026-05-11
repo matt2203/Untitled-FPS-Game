@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float ShootFXLifetime;
     private GameManager gameManager;
     public int Health = 100;
+    public float PlayerHP = 100f;
     
     
 
@@ -23,8 +24,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        playerAnimator = GetComponent<Animator>();
-        playerAnimator.SetBool("isMoving", false);
         StartCoroutine(DeactivateObjectsAfterDelay(ShootFXLifetime));
         gameManager = FindFirstObjectByType<GameManager>().GetComponent<GameManager>();
     }
@@ -32,10 +31,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         
-        playerAnimator.SetBool("isMoving", false);
-        playerAnimator.SetBool("isMovingLeft", false);
-        playerAnimator.SetBool("isMovingRight", false);
-        playerAnimator.SetBool("isMovingBack", false);
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddRelativeForce(Vector3.forward * speed);
@@ -63,7 +58,10 @@ public class PlayerController : MonoBehaviour
         {
             ShootFX.SetActive(true);
         }
-
+         if (PlayerHP <= 0)
+            {
+                SceneManager.LoadScene(4);
+            }
     }
     void OnTriggerEnter(Collider other)
     {
