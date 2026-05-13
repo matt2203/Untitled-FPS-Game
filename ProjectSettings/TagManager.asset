@@ -14,9 +14,6 @@ TagManager:
   - Dropship
   - Building
   - Scene Trigger
-  - ST1
-  - ST2
-  - ST3
   - Door Trigger Scene 1.5
   - Engine Light
   - Scene Trigger 2
@@ -25,6 +22,7 @@ TagManager:
   - Trigger1
   - Trigger2
   - DropshipEnd
+  - SpawnTrigger
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDPController : MonoBehaviour
+public class EnemyDPSpawner : MonoBehaviour
 {
     [Header("Prefab to Spawn")]
     public GameObject prefabToSpawn;

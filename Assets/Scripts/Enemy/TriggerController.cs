@@ -3,13 +3,17 @@ using UnityEngine;
 
 public class TriggerController : MonoBehaviour
 {
-    public GameObject ST1;
+    public GameObject SpawnPoint;
+    public GameObject SpawnTrigger;
+    public GameObject SpawnController;
+
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "ST1")
+        if (other.tag == "SpawnTrigger")
         {
-            ST1.SetActive(false);
+            Instantiate(SpawnController, SpawnPoint.transform.position, SpawnPoint.transform.rotation);
+           
         }
     }
 }

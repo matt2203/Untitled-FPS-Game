@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5557ace5400b74585bf053efc4f3a18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 30.5
   rb: {fileID: 1387975395317465364}
   playerAnimator: {fileID: 5108056084048575716}
   ShootFX: {fileID: 1405291723945903656}
@@ -536,10 +536,10 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &8943115938164752829
 BoxCollider:
@@ -609,7 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd41e3d60d29a422fac31826533a9565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ST1: {fileID: 0}
+  SpawnPoint: {fileID: 9016624415231335280, guid: bac890d248e7d441080bb77d01b4321c, type: 3}
+  SpawnController: {fileID: 1109313766050396865, guid: 518ba4f1e180243d5b7e2b6f46a00693, type: 3}
 --- !u!114 &1911852916016659006
 MonoBehaviour:
   m_ObjectHideFlags: 0
