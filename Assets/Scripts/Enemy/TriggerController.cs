@@ -1,19 +1,16 @@
-using System;
 using UnityEngine;
 
 public class TriggerController : MonoBehaviour
 {
-    public GameObject SpawnPoint;
-    public GameObject SpawnTrigger;
-    public GameObject SpawnController;
-
-
+    public GameObject SpawnManager;
+  
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "SpawnTrigger")
+        if (other.tag == "PlayerMain")
         {
-            Instantiate(SpawnController, SpawnPoint.transform.position, SpawnPoint.transform.rotation);
-           
+            Debug.Log("Detected");
+            SpawnManager.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
