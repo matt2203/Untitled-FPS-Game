@@ -62,6 +62,10 @@ public class PlayerController : MonoBehaviour
             {
                 SceneManager.LoadScene(4);
             }
+        if(PlayerHP <= 0)
+        {
+            SceneManager.LoadScene(4);
+        }
     }
     void OnTriggerEnter(Collider other)
     {

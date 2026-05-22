@@ -524,3 +524,4 @@ MonoBehaviour:
   lifeTime: 100
   PlayerHP: 100
   EnemyDmg: 50
+  BulletLifetime: 5

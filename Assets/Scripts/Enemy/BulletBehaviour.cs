@@ -9,28 +9,13 @@ public class BulletBehaviour : MonoBehaviour
 {
     public float speed = 1000f;
     public float lifeTime = 100f;
-    public float PlayerHP = 100f;
-    public float EnemyDmg;
-    public float BulletLifetime;
+    public int EnemyDmg;
     
  
  void Start()
     {
         Destroy(gameObject, lifeTime);
         GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * speed);
-         StartCoroutine(DestroyObjectsAfterDelay(BulletLifetime));
-    }
-
-    void Update()
-    {
-        if(PlayerHP <= 0)
-        {
-            Debug.Log("Game Over");
-        }
-
-        
-
-        
     }
 
 
@@ -38,19 +23,10 @@ public class BulletBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("PlayerMain"))
         {
-             PlayerHP -= EnemyDmg;
-        }
-        
+            collision.gameObject.GetComponent<PlayerController>().Health -= EnemyDmg;
+        } 
+        Destroy(gameObject);
     }
-    IEnumerator DestroyObjectsAfterDelay(float seconds)
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(seconds);
-
-            Destroy(gameObject);
-        }
-    } 
 }
  
 
