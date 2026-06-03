@@ -14,13 +14,9 @@ public class PlayerController : MonoBehaviour
     public float ShootFXLifetime;
     private GameManager gameManager;
     public int Health = 100;
-    public float PlayerHP = 100f;
     
     
-
-
-
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -58,14 +54,10 @@ public class PlayerController : MonoBehaviour
         {
             ShootFX.SetActive(true);
         }
-         if (PlayerHP <= 0)
+         if (Health <= 0)
             {
                 SceneManager.LoadScene(4);
             }
-        if(PlayerHP <= 0)
-        {
-            SceneManager.LoadScene(4);
-        }
     }
     void OnTriggerEnter(Collider other)
     {
@@ -93,7 +85,8 @@ public class PlayerController : MonoBehaviour
     {
         Health -= DmgToTake;
         gameManager.UpdateHealth(Health);
-    }        
+    }
+
 }
     
 
