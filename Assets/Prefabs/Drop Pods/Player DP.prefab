@@ -89,7 +89,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1752102071744580974
+--- !u!1 &2413619448703978643
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,38 +97,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3300196298766599372}
-  - component: {fileID: 8141375900202413555}
-  - component: {fileID: 6503651375595261783}
+  - component: {fileID: 7551826569721949859}
+  - component: {fileID: 3114891290725965248}
+  - component: {fileID: 2499986868876761356}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Audio Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3300196298766599372
+  m_IsActive: 0
+--- !u!4 &7551826569721949859
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752102071744580974}
+  m_GameObject: {fileID: 2413619448703978643}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.0061085457, z: -0, w: 0.99998134}
-  m_LocalPosition: {x: 0, y: -1.2666626, z: 0}
+  m_LocalPosition: {x: 0, y: -1.288, z: 0}
   m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 0.16666667}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5918070597203405310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8141375900202413555
+--- !u!65 &3114891290725965248
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752102071744580974}
+  m_GameObject: {fileID: 2413619448703978643}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -137,28 +137,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 6.457596, y: 0.26141357, z: 6.424988}
   m_Center: {x: 0.23270416, y: 1.2953796, z: 0.041656494}
---- !u!114 &6503651375595261783
+--- !u!114 &2499986868876761356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752102071744580974}
+  m_GameObject: {fileID: 2413619448703978643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a705d32f889f94d9687af84a06a98f19, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bc5ae24775cb4b3e80407c67028288f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TransitionController
-  Player: {fileID: 7168513845088087775, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
-  PlayerSpawn: {fileID: 4459301452694259293}
-  MainUI: {fileID: 0}
-  EntryCam: {fileID: 7369622367828542500}
+  m_EditorClassIdentifier: Assembly-CSharp::DPAudio
+  Audio: {fileID: 1230122460493530109, guid: 8ffb2e0133877417390dbff157e85a33, type: 3}
+  AudioSpawn: {fileID: 3584371363836644007}
 --- !u!1 &3584371363836644007
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +170,7 @@ GameObject:
   - component: {fileID: 8384883994118349117}
   - component: {fileID: 8607537762748025052}
   - component: {fileID: 1127629136323739129}
+  - component: {fileID: 7423066579605848640}
   m_Layer: 0
   m_Name: Player DP
   m_TagString: Drop Pod
@@ -199,7 +198,7 @@ Transform:
   - {fileID: 3304101094178922173}
   - {fileID: 4641405534083977941}
   - {fileID: 5493349146214308676}
-  - {fileID: 3300196298766599372}
+  - {fileID: 7551826569721949859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1546508891763337311
@@ -306,6 +305,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &7423066579605848640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3584371363836644007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a705d32f889f94d9687af84a06a98f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransitionController
+  Player: {fileID: 7168513845088087775, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
+  PlayerSpawn: {fileID: 4459301452694259293}
+  MainUI: {fileID: 0}
+  EntryCam: {fileID: 7369622367828542500}
 --- !u!1 &4459301452694259293
 GameObject:
   m_ObjectHideFlags: 0

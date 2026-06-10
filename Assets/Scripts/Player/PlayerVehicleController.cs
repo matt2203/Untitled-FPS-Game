@@ -5,17 +5,6 @@ public class PlayerVehicleController : MonoBehaviour
 {
     public float speed;
 
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Engine Light")

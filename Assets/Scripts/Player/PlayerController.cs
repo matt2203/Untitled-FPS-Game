@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 4700;
 
     public Rigidbody rb;
-    public Animator playerAnimator;
     public GameObject ShootFX;
     public float ShootFXLifetime;
     private GameManager gameManager;

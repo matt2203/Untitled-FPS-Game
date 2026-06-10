@@ -300,6 +300,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2413619448703978643, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499986868876761356, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114891290725965248, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3584371363836644007, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
       propertyPath: m_Name
       value: PlayerDP
@@ -348,7 +360,8 @@ PrefabInstance:
       propertyPath: MainUI
       value: 
       objectReference: {fileID: 1346025544}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8402110091683177395, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1752102071744580974, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
     m_AddedGameObjects: []

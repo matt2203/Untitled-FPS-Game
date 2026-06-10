@@ -8,7 +8,6 @@ public class TriggerController : MonoBehaviour
     {
         if (other.tag == "PlayerMain")
         {
-            Debug.Log("Detected");
             SpawnManager.SetActive(true);
             Destroy(gameObject);
         }
