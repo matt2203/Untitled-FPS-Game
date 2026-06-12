@@ -290,9 +290,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2413619448703978643, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 2438556631033922504, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3584371363836644007, guid: 3886e8b3c0b2a4057b267cba2649f84c, type: 3}
       propertyPath: m_Name
@@ -1006,6 +1006,10 @@ PrefabInstance:
     - target: {fileID: 4918269752753087432, guid: 93bbf26e075124d7ea0186e78e6a0fe0, type: 3}
       propertyPath: m_Center.x
       value: 26.187826
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511081016811447237, guid: 93bbf26e075124d7ea0186e78e6a0fe0, type: 3}
+      propertyPath: m_Name
+      value: mountain_terrain_01 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7998200994543566628, guid: 93bbf26e075124d7ea0186e78e6a0fe0, type: 3}
       propertyPath: m_LocalPosition.x
