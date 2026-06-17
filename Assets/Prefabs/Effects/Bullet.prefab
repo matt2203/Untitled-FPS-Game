@@ -520,8 +520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41d7f2ec64bb45cba2cc0ab208c313a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletBehaviour
-  speed: 0.05
+  speed: 0.25
   lifeTime: 100
-  PlayerHP: 100
   EnemyDmg: 50
-  BulletLifetime: 5
