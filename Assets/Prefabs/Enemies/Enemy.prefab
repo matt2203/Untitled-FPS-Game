@@ -386,7 +386,7 @@ MonoBehaviour:
   Firepoint: {fileID: 2101297507116118819}
   Bullet: {fileID: 5622290570181080972, guid: 34f1483fc6ec24ed397dce0f55231896, type: 3}
   fireRate: 0.03
-  startDelay: 0.03
+  startDelay: 1
   gameManager: {fileID: 0}
 --- !u!114 &1790668824630697305
 MonoBehaviour:
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7059551fec651497c98a3e25a77c64f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  PlayerLink: {fileID: 0}
+  PlayerLink: {fileID: 7168513845088087775, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
 --- !u!1 &5441604725578648431
 GameObject:
   m_ObjectHideFlags: 0

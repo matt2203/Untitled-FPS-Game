@@ -12,15 +12,15 @@ public class TransitionController : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        Instantiate(Player, PlayerSpawn.transform.position, PlayerSpawn.transform.rotation);
-        EntryCam.SetActive(false);
-        MainUI.SetActive(true);
-    }  
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Ground")
+        {
+        Instantiate(Player, PlayerSpawn.transform.position, PlayerSpawn.transform.rotation);
+        EntryCam.SetActive(false);
+        MainUI.SetActive(true);    
+        }
          if (other.tag == "Scene Trigger")
         {
             SceneManager.LoadScene(1);

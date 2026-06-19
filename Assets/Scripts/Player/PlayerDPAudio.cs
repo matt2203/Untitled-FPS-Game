@@ -6,10 +6,13 @@ public class PlayerDPAudio : MonoBehaviour
     public GameObject AudioSpawn;
     public GameObject AudioSource;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Ground")
+        {
         Instantiate(Audio, AudioSpawn.transform.position, AudioSpawn.transform.rotation);
         AudioSpawn.SetActive(false);
         AudioSource.SetActive(false);
+        }
     }
 }
