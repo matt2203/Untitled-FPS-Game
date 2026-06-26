@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float ShootFXLifetime;
     private GameManager gameManager;
     public int Health = 100;
+    public TMP_Text healthText;
     
     
     
@@ -80,7 +82,7 @@ public class PlayerController : MonoBehaviour
         }
     }          
 
-    public void TakeDmg(int DmgToTake)
+    public void Damage(int DmgToTake)
     {
         Health -= DmgToTake;
         gameManager.UpdateHealth(Health);

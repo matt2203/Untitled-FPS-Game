@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class TransitionController : MonoBehaviour
 {
     public GameObject Player;
-    public GameObject PlayerSpawn;
     public GameObject MainUI;
     public GameObject EntryCam;
     void Update()
@@ -17,7 +16,7 @@ public class TransitionController : MonoBehaviour
     {
         if (other.tag == "Ground")
         {
-        Instantiate(Player, PlayerSpawn.transform.position, PlayerSpawn.transform.rotation);
+        Player.SetActive(true);
         EntryCam.SetActive(false);
         MainUI.SetActive(true);    
         }

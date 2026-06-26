@@ -508,11 +508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30.5
   rb: {fileID: 1387975395317465364}
-  playerAnimator: {fileID: 5108056084048575716}
   ShootFX: {fileID: 1405291723945903656}
   ShootFXLifetime: 0.4
   Health: 100
-  PlayerHP: 100
+  healthText: {fileID: 0}
 --- !u!54 &1387975395317465364
 Rigidbody:
   m_ObjectHideFlags: 0
