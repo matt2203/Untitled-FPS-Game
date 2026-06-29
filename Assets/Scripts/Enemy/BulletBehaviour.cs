@@ -23,7 +23,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("PlayerMain"))
         {
-            collision.gameObject.GetComponent<PlayerController>().Health -= EnemyDmg;
+            collision.gameObject.GetComponent<PlayerController>().Damage(EnemyDmg);
         } 
         Destroy(gameObject);
     }

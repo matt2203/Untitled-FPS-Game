@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         StartCoroutine(DeactivateObjectsAfterDelay(ShootFXLifetime));
         gameManager = FindFirstObjectByType<GameManager>().GetComponent<GameManager>();
+        gameManager.UpdateHealth(Health);
     }
 
     void FixedUpdate()
