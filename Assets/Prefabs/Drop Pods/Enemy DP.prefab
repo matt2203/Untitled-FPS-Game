@@ -100,9 +100,9 @@ GameObject:
   - component: {fileID: 3853625063822636274}
   - component: {fileID: 1988987014914656940}
   - component: {fileID: 387243116267036909}
-  - component: {fileID: 5473402899198300695}
   - component: {fileID: 321670020751138246}
   - component: {fileID: -1452722539532647524}
+  - component: {fileID: 478953989785100544}
   m_Layer: 0
   m_Name: Enemy DP
   m_TagString: ST1
@@ -189,27 +189,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5473402899198300695
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540664590461286720}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.0000002, y: 2.3535602, z: 1.0000002}
-  m_Center: {x: 0.00000007947286, y: 0.17677848, z: -0.00000007947286}
 --- !u!54 &321670020751138246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -251,6 +230,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   Enemy: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
   EnemySpawn: {fileID: 4572557748114371793}
+--- !u!136 &478953989785100544
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540664590461286720}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1810752744776446302
 GameObject:
   m_ObjectHideFlags: 0

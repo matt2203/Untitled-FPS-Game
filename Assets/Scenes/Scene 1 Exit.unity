@@ -234,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998718839}
   - component: {fileID: 998718838}
+  - component: {fileID: 998718840}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -321,6 +322,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &998718840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998718837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3486e8da9804743d29b9c1aa87a0c90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkipCutscene
+  SkipDrop: 0
+  PlayerDP: {fileID: 0}
+  UI: {fileID: 0}
+  Player: {fileID: 0}
+  PlayerDPLanded: {fileID: 0}
+  SkipScene: 32
+  Scene: 0
 --- !u!1 &1071639565
 GameObject:
   m_ObjectHideFlags: 0

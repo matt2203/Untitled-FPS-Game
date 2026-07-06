@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03494d3528bb14a09939bc9a2fc10d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 2.5
+  Damage: 10
   BulletRange: 100
 --- !u!65 &1531869853029321384
 BoxCollider:

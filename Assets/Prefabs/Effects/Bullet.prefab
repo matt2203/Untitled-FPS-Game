@@ -522,4 +522,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletBehaviour
   speed: 0.25
   lifeTime: 100
-  EnemyDmg: 25
+  EnemyDmg: 15

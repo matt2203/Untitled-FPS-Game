@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6784043416039984433, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.5
@@ -551,6 +555,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
   m_PrefabInstance: {fileID: 2054470894}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &556655989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556655982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1df8448ed08842af958b46b17fbabdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneController
+  Level1: 0
+  AimTrainer: 0
+  ATReturn: 0
+  Quit: 0
+  QuitStop: 0
+  MainMenu: {fileID: 0}
+  QuitConfirm: {fileID: 0}
+  QuitConfirmed: 0
+  Level2: 0
 --- !u!1001 &625334905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,6 +587,10 @@ PrefabInstance:
     - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6784043416039984433, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2303,13 +2332,17 @@ PrefabInstance:
       propertyPath: SpawnDropship
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4727646701847329006, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
+      propertyPath: mouseSensitivity
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 5029915740351758457, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       propertyPath: Damage
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6282578050518527122, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       propertyPath: speed
-      value: 25
+      value: 31.8
       objectReference: {fileID: 0}
     - target: {fileID: 6308375164548298489, guid: d53f68376cba74ef5a4b78cb75ee3599, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2376,6 +2409,10 @@ PrefabInstance:
     - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_Name
       value: Enemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6784043416039984433, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2653,6 +2690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6784043416039984433, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.5
@@ -2821,6 +2862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6784043416039984433, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 129.5
@@ -2946,6 +2991,10 @@ PrefabInstance:
     - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971129911695928064, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6784043416039984433, guid: bc72e64b5652c4b02bd9e0d01d3662da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3185,6 +3234,18 @@ PrefabInstance:
       propertyPath: IndicatorBeacon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1535300054277370319, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Size.z
+      value: 0.2588159
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535300054277370319, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Center.x
+      value: -0.017984685
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535300054277370319, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      propertyPath: m_Center.z
+      value: -1.8927128
+      objectReference: {fileID: 0}
     - target: {fileID: 6942750833835410208, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
       propertyPath: m_LinearDamping
       value: 12
@@ -3280,7 +3341,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8484408699214159658, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 556655989}
   m_SourcePrefab: {fileID: 100100000, guid: 1d870ca464d4b49d482bac71536a3d61, type: 3}
 --- !u!1001 &6856626302390702355
 PrefabInstance:

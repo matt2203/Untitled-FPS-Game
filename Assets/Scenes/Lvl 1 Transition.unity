@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 433479871}
   - component: {fileID: 433479873}
   - component: {fileID: 433479874}
+  - component: {fileID: 433479875}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -295,6 +296,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df883b88513864f5298b7c1b675da585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReturnToMenu
+--- !u!114 &433479875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433479870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3486e8da9804743d29b9c1aa87a0c90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkipCutscene
+  SkipDrop: 0
+  PlayerDP: {fileID: 0}
+  UI: {fileID: 0}
+  Player: {fileID: 0}
+  PlayerDPLanded: {fileID: 0}
+  SkipScene: 32
+  Scene: 1
+--- !u!1 &1294666448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4515950706412176764, guid: 4e2ef7c25ee8946cc8c6390c265eea36, type: 3}
+  m_PrefabInstance: {fileID: 4278082971213416603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1294666452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294666448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfee1af6f71f43d88a9a7feab584fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorLock
 --- !u!1001 &4278082971213416603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,7 +411,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4515950706412176764, guid: 4e2ef7c25ee8946cc8c6390c265eea36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1294666452}
   m_SourcePrefab: {fileID: 100100000, guid: 4e2ef7c25ee8946cc8c6390c265eea36, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

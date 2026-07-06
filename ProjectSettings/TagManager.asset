@@ -23,6 +23,8 @@ TagManager:
   - Trigger2
   - DropshipEnd
   - SpawnTrigger
+  - ST1
+  - ST2
   layers:
   - Default
   - TransparentFX

@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 839233773}
   - component: {fileID: 839233775}
   - component: {fileID: 839233776}
+  - component: {fileID: 839233777}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -242,6 +243,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df883b88513864f5298b7c1b675da585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReturnToMenu
+--- !u!114 &839233777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839233772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3486e8da9804743d29b9c1aa87a0c90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkipCutscene
+  SkipDrop: 0
+  PlayerDP: {fileID: 0}
+  UI: {fileID: 0}
+  Player: {fileID: 0}
+  PlayerDPLanded: {fileID: 0}
+  SkipScene: 32
+  Scene: 6
 --- !u!1 &1177203925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6267789854425860648, guid: dee087b5edc95482597d01f7e2029f24, type: 3}
@@ -405,9 +425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransitionController
   Player: {fileID: 0}
-  Exp: {fileID: 0}
-  ExpSpawn: {fileID: 0}
   MainUI: {fileID: 0}
+  EntryCam: {fileID: 0}
 --- !u!1 &1824023286
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +538,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 10, z: 10.000001}
   m_Center: {x: 0, y: 1.0000079, z: -5.7748042e-12}
+--- !u!1 &2033129368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7954149643086587220, guid: dee087b5edc95482597d01f7e2029f24, type: 3}
+  m_PrefabInstance: {fileID: 3602468908875987284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033129372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033129368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfee1af6f71f43d88a9a7feab584fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorLock
 --- !u!1001 &3602468908875987284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -587,6 +623,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6267789854425860648, guid: dee087b5edc95482597d01f7e2029f24, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1177315800}
+    - targetCorrespondingSourceObject: {fileID: 7954149643086587220, guid: dee087b5edc95482597d01f7e2029f24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2033129372}
   m_SourcePrefab: {fileID: 100100000, guid: dee087b5edc95482597d01f7e2029f24, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

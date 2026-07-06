@@ -73,6 +73,11 @@ public class SceneController : MonoBehaviour
             SceneManager.LoadScene(3);   
         }
 
+         if (other.tag == "PlayerMain")
+        {
+            SceneManager.LoadScene(10);   
+        }
+
         if (other.tag == "PlayerLvl2 Transition")
         {
             SceneManager.LoadScene(8);   
